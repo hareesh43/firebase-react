@@ -5,9 +5,6 @@ import Navbar from './componnents/layout/Navbar';
 
 
 
-
-
-
 class App extends Component{
   render(){
   return (
@@ -15,9 +12,7 @@ class App extends Component{
 
         <div className="App">
           <Navbar/>
-     
-       
-     
+    
         </div>
 
     </BrowserRouter>

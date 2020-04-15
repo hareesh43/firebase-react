@@ -1,9 +1,11 @@
 import React, { Component } from 'react'
 
-class Signedin extends Component {
+class SignUp extends Component {
     state = {
         email:'',
-        password:''
+        password:'',
+        firstName:'',
+        lastName:''
 
     }
     handleChange = (e)=>
@@ -25,7 +27,19 @@ class Signedin extends Component {
         return (
             <div className = 'container'>
                 <form onSubmit = {this.handleSubmit} className = 'white'>
-                    <h5 className = 'grey-text text-darken-3'>SignIn</h5>
+                    <h5 className = 'grey-text text-darken-3'>SignUp</h5>
+
+                    <div className = 'input-field'>
+                        <label htmlFor = 'firstName'>First Name</label>
+                        <input type = 'text' id = 'firstName' onChange = {this.handleChange}/>
+                    </div>
+
+                    <div className = 'input-field'>
+                        <label htmlFor = 'lastName'>Last Name</label>
+                        <input type = 'text' id = 'lastName' onChange = {this.handleChange}/>
+                    </div>
+
+
 
                     <div className = 'input-field'>
                         <label htmlFor = 'email'>Email</label>
@@ -37,7 +51,7 @@ class Signedin extends Component {
                         <input type = 'password' id = 'password' onChange = {this.handleChange}/>
                     </div>
                     <div className = 'input-field'>
-                        <button className = 'btn pink lighten-3 z-depth-0'>Login</button>
+                        <button className = 'btn pink lighten-3 z-depth-0'>SignUp</button>
 
                     </div>
 
@@ -49,5 +63,5 @@ class Signedin extends Component {
     }
 }
 
-export default Signedin;
+export default SignUp;
 

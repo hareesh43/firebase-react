@@ -5,7 +5,7 @@ const Notification = ()=>
 
     return(
         <div>
-            <p>Notificatio</p>
+            <p>Notification</p>
         </div>
     )
 }

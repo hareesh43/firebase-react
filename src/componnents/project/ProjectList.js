@@ -2,15 +2,17 @@ import React from 'react';
 import Projectsummary from './Projectsummary';
 
 
-const ProjectList = ()=>
+const ProjectList = ({projects})=>
 {
     return(
         <div className = 'project-list section'>
+            { projects && projects.map(project =>{
+                return(
+                    <Projectsummary project = {project} key = {project.id}/>
+                )
 
-            <Projectsummary/>
-            <Projectsummary/>
-            <Projectsummary/>
-            <Projectsummary/>
+            })
+            }
 
             
         </div>

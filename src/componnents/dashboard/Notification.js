@@ -5,7 +5,7 @@ const Notification = ()=>
 
     return(
         <div>
-            <p>Notification</p>
+            <p className = 'white'>Notification</p>
         </div>
     )
 }
